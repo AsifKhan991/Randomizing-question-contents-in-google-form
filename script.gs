@@ -62,18 +62,18 @@ function redefineques() {
 
   form.setAcceptingResponses(true);
 
-  for (var i = 0; i < 9; i++) {
-    var props = process_pack(packs[i]);
+  
+   var props = process_pack(packs[randomInteger(0, 8)]);
 
-    var item = form.addMultipleChoiceItem();
-    item = item.setRequired(true);
-    item.setTitle('Do you prefer this pack?\nSize: ' + props[1].toString() + ' GB\n  Unlimited talk and text: ' + props[0].toString() + '\nDuration: ' + props[3].toString() + ' Days\nPrice: ' + props[2].toString() + ' BDT')
-      .setChoices([
-        item.createChoice('yes'),
-        item.createChoice('no')
-      ])
-      .showOtherOption(false);
-  }
+   var item = form.addMultipleChoiceItem();
+   item = item.setRequired(true);
+   item.setTitle('Do you prefer this pack?\nSize: ' + props[1].toString() + ' GB\n  Unlimited talk and text: ' + props[0].toString() + '\nDuration: ' + props[3].toString() + ' Days\nPrice: ' + props[2].toString() + ' BDT')
+     .setChoices([
+       item.createChoice('yes'),
+       item.createChoice('no')
+     ])
+     .showOtherOption(false);
+  
   form.setAcceptingResponses(true);
 
 }
