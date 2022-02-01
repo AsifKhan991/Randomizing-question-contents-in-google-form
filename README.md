@@ -13,3 +13,5 @@ The google scipt in this repository is used for a dummy survey on 5G data pack w
   1) In app script editor, go to triggers menu click "add trigger"<br>![This is an image](https://github.com/AsifKhan991/Randomizing-question-contents-in-google-form/blob/main/trigger%20menu.PNG)
   2) apply settings as such and click save <br>![This is an image](https://github.com/AsifKhan991/Randomizing-question-contents-in-google-form/blob/main/trigger%20settings.PNG)
   3) upon completion it will look like this and you are done<br>![This is an image](https://github.com/AsifKhan991/Randomizing-question-contents-in-google-form/blob/main/after%20completion.PNG)
+## Note:
+Curretnly it is not possible to take response and run the process simulataneously by 2 users, That is at a time one person should submit the form for the above function to work properly. Work is in progress to enable multiple instances of the function each time the form is opened.
