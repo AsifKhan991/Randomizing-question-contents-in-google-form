@@ -12,10 +12,10 @@ var packs = [
 
 
 function redefineques() {
-  var FILE = SpreadsheetApp.openById("1jpBhCiQ4hKOS6Y6HLdLv7zUUcrMyed7iIz1c2ugD7CU");
+  var FILE = SpreadsheetApp.openById("your spread-sheet id");
   var CONTENT = FILE.getSheetByName("Sheet1");
 
-  var form = FormApp.openById('1YvRcuLNj5TR1y55IHB-Rs_utDhmY84hrpD250v-ZPhk')
+  var form = FormApp.openById('your form id')
   var formResponses = form.getResponses();
   form.setAcceptingResponses(false)
   for (var i = 0; i < formResponses.length; i++) {
